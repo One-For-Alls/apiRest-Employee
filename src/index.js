@@ -2,7 +2,9 @@ import express from 'express';
 //import morgan from 'morgan';
 import employeesRoutes from './routes/employees.routes.js';
 import indexRoutes from './routes/index.routes.js';
-import {PORT} from './config.js';
+import {PORT, DB_PORT} from './config.js';
+
+console.log(DB_PORT);
 
 const app = express();
 
