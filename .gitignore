@@ -1,5 +1,5 @@
 node_modules
-env
+.env
 app.yaml
 AUTH_GOOGLE.json
 
