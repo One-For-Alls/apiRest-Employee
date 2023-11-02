@@ -26,5 +26,14 @@ app.use('/api',employeesRoutes);
 app.use((req, res, next) => {
     res.status(404).json({ message: "API NOT FOUND" })
 })
+
+
+const storage = new Storage({
+  projectId: 'companydb-403402',
+  keyFilename: 'path/to/your/credentials.json' // Aquí va la ruta al archivo de credenciales
+});
+
+console.log(storage);
+
 // start server
 app.listen(app.get('port'), () => console.log(`Server running in port ${PORT}`));

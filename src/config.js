@@ -8,3 +8,4 @@ export const DB_NAME = process.env.DB_NAME;
 export const USER = process.env.USER;
 export const PASSWORD = process.env.PASSWORD;
 export const DB_PORT = process.env.DB_PORT;
+export const PATH = process.env.cloud_sql_instances;

@@ -7,7 +7,7 @@ export const getEmployees = async (req, res) => {
         if (row.length <= 0) return res.status(404).send('Error al consultar los empleados');
         res.json(row);
     } catch (error) {
-        return res.status(500).send('Error en el servidor');
+        return res.status(500).send('Error en el servidor: ' + error);
     }
 };
 
